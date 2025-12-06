@@ -1,119 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Shay Withnall | Business Development & Bid Writing</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Shay Withnall – Business Development and Bid Writing professional specialising in strategic fundraising, stakeholder engagement and income generation in the third sector." />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Shay Withnall – Business Development and Bid Writing professional with extensive third sector experience, strategic leadership and proven fundraising success.">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     :root {
       --bg: #0f172a;
-      --bg-light: #111827;
+      --bg2: #111827;
       --accent: #38bdf8;
-      --accent-soft: rgba(56, 189, 248, 0.15);
-      --text-main: #f9fafb;
-      --text-muted: #9ca3af;
-      --card-bg: #020617;
-      --border-subtle: #1f2937;
-      --pill-bg: #111827;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+      --text: #f9fafb;
+      --muted: #9ca3af;
+      --border: #1f2937;
     }
 
     body {
-      font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        sans-serif;
-      background: radial-gradient(circle at top, #111827 0, #020617 45%, #020617 100%);
-      color: var(--text-main);
-      line-height: 1.6;
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: radial-gradient(circle at top, #111827 0%, #020617 60%);
+      color: var(--text);
+      line-height: 1.7;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+    a { color: inherit; text-decoration: none; }
 
     .page {
       max-width: 1100px;
-      margin: 0 auto;
-      padding: 32px 16px 64px;
+      margin: auto;
+      padding: 28px 16px 80px;
     }
 
+    /* HERO HEADER */
     header {
+      background: linear-gradient(135deg, rgba(2,6,23,0.92), rgba(11,17,32,0.92)),
+        url('https://images.unsplash.com/photo-1521790361543-f645cf042ec4?auto=format&fit=crop&w=1200&q=80');
+      background-size: cover;
+      background-position: center;
+      padding: 50px 32px;
+      border-radius: 24px;
+      border: 1px solid var(--border);
       display: flex;
       flex-wrap: wrap;
-      gap: 24px;
       justify-content: space-between;
       align-items: center;
-      padding: 24px 24px 20px;
-      border-radius: 20px;
-      background: linear-gradient(135deg, #020617, #020617 50%, #0b1120);
-      border: 1px solid var(--border-subtle);
-      box-shadow: 0 24px 60px rgba(15, 23, 42, 0.7);
-    }
-
-    .identity {
-      max-width: 620px;
-    }
-
-    .name {
-      font-size: clamp(2rem, 3vw, 2.4rem);
-      font-weight: 700;
-      letter-spacing: 0.04em;
-    }
-
-    .title {
-      margin-top: 6px;
-      font-size: 0.98rem;
-      text-transform: uppercase;
-      letter-spacing: 0.25em;
-      color: var(--accent);
-      font-weight: 600;
-    }
-
-    .summary {
-      margin-top: 14px;
-      font-size: 0.98rem;
-      color: var(--text-muted);
-    }
-
-    .contact {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-      font-size: 0.9rem;
-      color: var(--text-muted);
+      gap: 32px;
     }
 
     .pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 6px 10px;
+      display: inline-block;
+      padding: 6px 12px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid var(--border);
       border-radius: 999px;
-      font-size: 0.78rem;
-      background: var(--pill-bg);
-      border: 1px solid var(--border-subtle);
-      color: var(--text-muted);
+      font-size: 0.75rem;
       text-transform: uppercase;
-      letter-spacing: 0.18em;
-      margin-bottom: 10px;
+      letter-spacing: 0.15em;
+      color: var(--muted);
+    }
+
+    .name {
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-top: 10px;
+    }
+
+    .title {
+      color: var(--accent);
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.25em;
+      margin-top: 4px;
+    }
+
+    .summary {
+      margin-top: 16px;
+      max-width: 600px;
+      color: var(--muted);
+      font-size: 1rem;
     }
 
     .btn-row {
+      margin-top: 20px;
       display: flex;
+      gap: 12px;
       flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 16px;
     }
 
     .btn {
@@ -123,7 +99,6 @@
       font-weight: 500;
       border: 1px solid transparent;
       cursor: pointer;
-      transition: all 0.2s ease;
       display: inline-flex;
       align-items: center;
       gap: 8px;
@@ -132,416 +107,18 @@
     .btn-primary {
       background: var(--accent);
       color: #02101a;
-      box-shadow: 0 10px 30px rgba(56, 189, 248, 0.35);
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 14px 40px rgba(56, 189, 248, 0.45);
+      box-shadow: 0 10px 30px rgba(56,189,248,0.35);
     }
 
     .btn-ghost {
       background: transparent;
-      border-color: var(--border-subtle);
-      color: var(--text-muted);
+      border: 1px solid var(--border);
+      color: var(--muted);
     }
 
-    .btn-ghost:hover {
-      border-color: var(--accent);
-      color: var(--accent);
-    }
-
-    main {
-      margin-top: 32px;
-      display: grid;
-      grid-template-columns: minmax(0, 2.1fr) minmax(0, 1.4fr);
-      gap: 24px;
-    }
-
-    @media (max-width: 860px) {
-      main {
-        grid-template-columns: minmax(0, 1fr);
-      }
-      header {
-        align-items: flex-start;
-      }
-    }
-
-    section {
-      margin-bottom: 24px;
-    }
-
-    .section-title {
-      font-size: 0.95rem;
-      font-weight: 600;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--text-muted);
-      margin-bottom: 10px;
-    }
-
-    .card {
-      background: radial-gradient(circle at top left, #020617, #020617 40%, #020617);
-      border-radius: 18px;
-      border: 1px solid var(--border-subtle);
-      padding: 16px 18px 18px;
-    }
-
-    .skills-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 6px;
-    }
-
-    .skill-badge {
-      padding: 6px 10px;
-      border-radius: 999px;
-      background: var(--pill-bg);
-      font-size: 0.82rem;
-      color: var(--text-muted);
-      border: 1px solid #1f2937;
-      white-space: nowrap;
-    }
-
-    .job {
-      padding: 14px 0;
-      border-bottom: 1px solid #111827;
-    }
-
-    .job:last-child {
-      border-bottom: none;
-    }
-
-    .job-header {
-      display: flex;
-      justify-content: space-between;
-      gap: 10px;
-      align-items: baseline;
-      margin-bottom: 4px;
-    }
-
-    .job-role {
-      font-weight: 600;
-      font-size: 0.98rem;
-    }
-
-    .job-org {
+    .contact {
       font-size: 0.9rem;
-      color: var(--text-muted);
-    }
-
-    .job-dates {
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      white-space: nowrap;
-    }
-
-    .job-location {
-      font-size: 0.84rem;
-      color: var(--text-muted);
-      margin-bottom: 6px;
-    }
-
-    .job-list {
-      margin-left: 16px;
-      margin-top: 4px;
-      font-size: 0.9rem;
-      color: var(--text-muted);
-    }
-
-    .job-list li {
-      margin-bottom: 4px;
-    }
-
-    .two-col {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 10px;
-      margin-top: 6px;
-    }
-
-    @media (max-width: 640px) {
-      .two-col {
-        grid-template-columns: minmax(0, 1fr);
-      }
-    }
-
-    .edu-item {
-      padding: 10px 0;
-      border-bottom: 1px solid #111827;
-    }
-
-    .edu-item:last-child {
-      border-bottom: none;
-    }
-
-    .edu-title {
-      font-size: 0.95rem;
-      font-weight: 600;
-    }
-
-    .edu-meta {
-      font-size: 0.86rem;
-      color: var(--text-muted);
-      margin-top: 2px;
-    }
-
-    footer {
-      margin-top: 28px;
-      text-align: center;
-      font-size: 0.78rem;
-      color: var(--text-muted);
-      padding-top: 12px;
-      border-top: 1px solid #111827;
-    }
-
-    .highlight {
-      color: var(--accent);
-    }
-  </style>
-</head>
-<body>
-  <div class="page">
-    <header>
-      <div class="identity">
-        <div class="pill">Available for Business Development & Bid Writing Roles</div>
-        <h1 class="name">Shay Withnall</h1>
-        <div class="title">Business Development · Funding & Bid Writing · Third Sector Leadership</div>
-        <p class="summary">
-          Accomplished and results-driven Business Development professional with extensive third sector
-          and not-for-profit experience. Proven track record in income generation, strategic funding,
-          high-value partnerships and leading teams to deliver mission-driven growth.
-        </p>
-        <div class="btn-row">
-          <!-- Replace # with your CV link if you host it somewhere -->
-          <a href="#" class="btn btn-primary">Download CV</a>
-          <a href="mailto:shayphn@gmail.com" class="btn btn-ghost">Email Shay</a>
-        </div>
-      </div>
-
-      <div class="contact">
-        <div><strong>Location:</strong> Walsall, United Kingdom</div>
-        <div><strong>Phone:</strong> <a href="tel:+447883853740">+44 7883 853740</a></div>
-        <div><strong>Email:</strong> <a href="mailto:shayphn@gmail.com">shayphn@gmail.com</a></div>
-        <div><strong>Languages:</strong> English (Fluent), French (Intermediate), German (Basic)</div>
-      </div>
-    </header>
-
-    <main>
-      <!-- LEFT COLUMN -->
-      <div>
-        <!-- EXPERIENCE -->
-        <section>
-          <h2 class="section-title">Experience</h2>
-          <div class="card">
-
-            <div class="job">
-              <div class="job-header">
-                <div>
-                  <div class="job-role">Regeneration Assistant</div>
-                  <div class="job-org">Walsall Council</div>
-                </div>
-                <div class="job-dates">Jul 2025 – Present</div>
-              </div>
-              <div class="job-location">Walsall · Local Government</div>
-              <ul class="job-list">
-                <li>Create content for communication channels, including social media marketing.</li>
-                <li>Maintain and update data across recording and CRM systems.</li>
-                <li>Support events such as job fairs and recruitment sessions.</li>
-                <li>Act as first point of contact for inbound client and stakeholder queries.</li>
-              </ul>
-            </div>
-
-            <div class="job">
-              <div class="job-header">
-                <div>
-                  <div class="job-role">Business Development Executive</div>
-                  <div class="job-org">Performance Through People</div>
-                </div>
-                <div class="job-dates">Jun 2023 – Nov 2024</div>
-              </div>
-              <div class="job-location">Walsall · Apprenticeships & Skills</div>
-              <ul class="job-list">
-                <li>Consistently exceeded B2B sales targets, generating c.<span class="highlight">£30K per month</span> in apprenticeship revenue.</li>
-                <li>Managed multiple government contracts with high compliance and quality standards.</li>
-                <li>Developed new employer partnerships and strengthened existing relationships.</li>
-                <li>Supported learners with CVs, cover letters and job applications, improving employment outcomes.</li>
-              </ul>
-            </div>
-
-            <div class="job">
-              <div class="job-header">
-                <div>
-                  <div class="job-role">Startup Manager / Founder</div>
-                  <div class="job-org">Panache</div>
-                </div>
-                <div class="job-dates">Nov 2018 – Jun 2023</div>
-              </div>
-              <div class="job-location">Walsall · E-commerce / Drop Shipping</div>
-              <ul class="job-list">
-                <li>Founded and registered an online retail business, overseeing strategic and operational setup.</li>
-                <li>Led operational restructuring using lean methods to reduce costs and improve efficiency.</li>
-                <li>Developed employee policies and handbook, supporting a motivated and informed team.</li>
-                <li>Authored the business plan and financial modelling, achieving ongoing profitability.</li>
-              </ul>
-            </div>
-
-            <div class="job">
-              <div class="job-header">
-                <div>
-                  <div class="job-role">Business Development Manager (Interim)</div>
-                  <div class="job-org">IHL Group</div>
-                </div>
-                <div class="job-dates">May 2018 – Aug 2018</div>
-              </div>
-              <div class="job-location">UK · Commercial</div>
-              <ul class="job-list">
-                <li>Negotiated 20+ high-value contracts, directly supporting business growth.</li>
-                <li>Expanded the client base through targeted networking and relationship building.</li>
-                <li>Facilitated meetings between client decision-makers and senior leadership.</li>
-              </ul>
-            </div>
-
-            <div class="job">
-              <div class="job-header">
-                <div>
-                  <div class="job-role">Business Development Manager</div>
-                  <div class="job-org">CHADD Ltd</div>
-                </div>
-                <div class="job-dates">Apr 2017 – Apr 2018</div>
-              </div>
-              <div class="job-location">Dudley · Housing Association</div>
-              <ul class="job-list">
-                <li>Generated <span class="highlight">£9M+</span> in new income via a 5-year funding strategy and annual plan.</li>
-                <li>Created a central tender library and identified new funding opportunities.</li>
-                <li>Produced marketing materials and events to boost engagement and visibility.</li>
-              </ul>
-            </div>
-
-            <div class="job">
-              <div class="job-header">
-                <div>
-                  <div class="job-role">Business Development Manager</div>
-                  <div class="job-org">Citizens Advice Coventry</div>
-                </div>
-                <div class="job-dates">Nov 2015 – Apr 2017</div>
-              </div>
-              <div class="job-location">Coventry · Charity / Advice Sector</div>
-              <ul class="job-list">
-                <li>Secured <span class="highlight">£2M+</span> in new funding through grants, tenders and strategic partnerships.</li>
-                <li>Led bid writing for funders such as Big Lottery and Esmée Fairbairn.</li>
-                <li>Developed fundraising and sustainability strategies including legacy giving and tender libraries.</li>
-                <li>Advised senior leadership on business development, change and long-term strategy.</li>
-              </ul>
-            </div>
-
-            <div class="job">
-              <div class="job-header">
-                <div>
-                  <div class="job-role">Business Development Officer & Earlier Roles</div>
-                  <div class="job-org">Black Country Housing Group</div>
-                </div>
-                <div class="job-dates">Jan 2005 – Oct 2015</div>
-              </div>
-              <div class="job-location">Birmingham · Housing & Care</div>
-              <ul class="job-list">
-                <li>Secured contracts worth over <span class="highlight">£1M</span> and grew private repairs sales by 50%.</li>
-                <li>Held progressive roles including Business Improvement Officer, Maintenance Coordinator and IT Manager.</li>
-                <li>Managed IT budgets (c.<span class="highlight">£1M</span>), led system implementations and achieved 100% gas compliance across 2,000 properties.</li>
-              </ul>
-            </div>
-
-          </div>
-        </section>
-      </div>
-
-      <!-- RIGHT COLUMN -->
-      <aside>
-        <!-- KEY SKILLS -->
-        <section>
-          <h2 class="section-title">Key Skills</h2>
-          <div class="card">
-            <h3 style="font-size:0.95rem;font-weight:600;">Business Development & Fundraising</h3>
-            <div class="skills-grid">
-              <span class="skill-badge">Bid Writing</span>
-              <span class="skill-badge">Grant Applications</span>
-              <span class="skill-badge">Contract Tendering</span>
-              <span class="skill-badge">Funding Strategy</span>
-              <span class="skill-badge">Income Generation</span>
-              <span class="skill-badge">Strategic Planning</span>
-            </div>
-
-            <h3 style="font-size:0.95rem;font-weight:600;margin-top:14px;">Leadership & Delivery</h3>
-            <div class="skills-grid">
-              <span class="skill-badge">Team Leadership</span>
-              <span class="skill-badge">Change Management</span>
-              <span class="skill-badge">Operational Improvement</span>
-              <span class="skill-badge">Project Management</span>
-              <span class="skill-badge">P&amp;L Oversight</span>
-            </div>
-
-            <h3 style="font-size:0.95rem;font-weight:600;margin-top:14px;">Stakeholder & Finance</h3>
-            <div class="skills-grid">
-              <span class="skill-badge">Partnership Building</span>
-              <span class="skill-badge">Community Engagement</span>
-              <span class="skill-badge">Client Negotiation</span>
-              <span class="skill-badge">Budget Oversight</span>
-              <span class="skill-badge">Financial Modelling</span>
-            </div>
-          </div>
-        </section>
-
-        <!-- TECH -->
-        <section>
-          <h2 class="section-title">Technical</h2>
-          <div class="card">
-            <div class="skills-grid">
-              <span class="skill-badge">Microsoft Office Suite</span>
-              <span class="skill-badge">Salesforce CRM</span>
-              <span class="skill-badge">QuickBooks</span>
-              <span class="skill-badge">Inventory Management</span>
-              <span class="skill-badge">Capita Open Housing</span>
-            </div>
-          </div>
-        </section>
-
-        <!-- EDUCATION -->
-        <section>
-          <h2 class="section-title">Education & Qualifications</h2>
-          <div class="card">
-            <div class="edu-item">
-              <div class="edu-title">BSc Business Management & Accounting</div>
-              <div class="edu-meta">Open University, Birmingham · Completed 2023</div>
-            </div>
-
-            <div class="edu-item">
-              <div class="edu-title">ILM Qualification</div>
-              <div class="edu-meta">LGBT Centre, Birmingham · 2013 – 2014</div>
-            </div>
-
-            <div class="edu-item">
-              <div class="edu-title">City &amp; Guilds in Energy Awareness</div>
-              <div class="edu-meta">BVSC, Birmingham · 2013</div>
-            </div>
-
-            <div class="edu-item">
-              <div class="edu-title">A-Level in Law</div>
-              <div class="edu-meta">Walsall College · 2008</div>
-            </div>
-          </div>
-        </section>
-      </aside>
-    </main>
-
-    <footer>
-      &copy; <span id="year"></span> Shay Withnall · Business Development & Bid Writing
-    </footer>
-  </div>
-
-  <script>
-    // Set current year in footer
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+      color: var(--muted);
+      display: flex;
+      flex-direction: column;
+      gap:
